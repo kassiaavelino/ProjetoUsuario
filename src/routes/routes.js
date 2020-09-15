@@ -2,6 +2,7 @@ const express = require('express');
 const UsuarioController = require ('../controllers/usuarioController.js');
 const router = express.Router();
  
+//C R U D
 router.post('/usuarios', UsuarioController.Insert);
 router.get('/usuarios', UsuarioController.SelectAll);
 router.get('/usuarios/:id', UsuarioController.SelectDetail);

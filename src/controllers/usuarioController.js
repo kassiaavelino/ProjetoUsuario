@@ -4,6 +4,7 @@ const status = require('http-status');
  
 // Cria o método Insert, obtendo os dados da request
 //req seria como um input
+
 exports.Insert = (req, res, next) => {
     const nome = req.body.nome;
     const salario = req.body.salario;
